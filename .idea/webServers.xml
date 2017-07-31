@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7962abba-eba7-4286-8600-d09cbc5417aa" name="Server1" url="http://localhost:8081/">
+        <fileTransfer port="0" mountedRoot="$USER_HOME$/Development/TitanServer" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
