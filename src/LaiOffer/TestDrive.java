@@ -6,6 +6,8 @@ import LaiOffer.HelperClass.TreeNode;
 import LaiOffer.SortingAlgorithms.BucketSort;
 import LaiOffer.SortingAlgorithms.CountingSort;
 import LaiOffer.SortingAlgorithms.KSortedSort;
+import LaiOffer.Trie.BoggleGame;
+import LaiOffer.Trie.Trie;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -91,9 +93,31 @@ public class TestDrive {
 
 //        int[][] matrix = new int[][] {{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 50}};
 
-        int[] array = new int[]{1, 2, 3};
-//        solu.sortColors(array);
-        System.out.println(solu.subsets(array).size());
+//        int[] array = new int[]{1, 2, 3};
+//        char[][] gym = new char[][]{
+//                {'o','a','a','n'},
+//                {'e','t','a','e'},
+//                {'i','h','k','r'},
+//                {'i','f','l','v'}};
+//        char[][] gym2 = {{'a'}};
+//        String[] words = {"oath","pea","eat","rain"};
+//        String[] words2 = {"a", "a"};
+
+        String[] words3 = {"ab","cb","ad","bd","ac","ca","da","bc","db","adcb","dabc","abb","acb"};
+        char[][] gym3 = new char[][]{
+                {'a','b'},
+                {'c','d'}};
+
+//        System.out.println(solu.findWords(gym, words));
+//        System.out.println(solu.findWords(gym2, words2));
+        System.out.println(solu.findWords(gym3, words3));
+//        BoggleGame b = new BoggleGame();
+//        System.out.println(BoggleGame.boggleGameNaive(gym, words));
+//        System.out.println(BoggleGame.BoggleGameOptimized(gym, words));
+        System.out.println(BoggleGame.BoggleGameOptimized(gym3, words3));
+//        System.out.println(solu.exist(gym, "SEE"));
+//        System.out.println(solu.exist(gym, "ABCB"));
+//        System.out.println(solu.exist(gym, "ASBF"));
 //        for (int[] array : matrix) {
 //            System.out.println(Arrays.toString(array));
 //        }

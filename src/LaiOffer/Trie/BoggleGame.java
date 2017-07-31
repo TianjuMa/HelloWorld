@@ -1,7 +1,6 @@
 package LaiOffer.Trie;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Boggle Game: Given a matrix of characters, you can move from one cell to the neighbor
@@ -16,9 +15,11 @@ public class BoggleGame {
             return null;
         }
         List<String> result = new ArrayList<>();
-        for (String word : dic) {
-            if (existWord(matrix, word)) {
-                result.add(word);
+        Set<String> set = new HashSet<>();
+        Collections.addAll(set, dic);
+        for (String s : set) {
+            if (existWord(matrix, s)) {
+                result.add(s);
             }
         }
         return result;
@@ -41,11 +42,10 @@ public class BoggleGame {
     }
 
     private static boolean existWord(char[][] matrix, String word) {
-        StringBuilder sb = new StringBuilder();
         boolean[][] visited = new boolean[matrix.length][matrix[0].length];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                if (boggleGameNaiveDFSHelper(matrix, i, j, sb, 0, word, visited)) {
+                if (boggleGameNaiveDFSHelper(matrix, i, j, 0, word, visited)) {
                     return true;
                 }
             }
@@ -53,7 +53,7 @@ public class BoggleGame {
         return false;
     }
 
-    private static boolean boggleGameNaiveDFSHelper(char[][] matrix, int row, int col, StringBuilder sb,
+    private static boolean boggleGameNaiveDFSHelper(char[][] matrix, int row, int col,
                                                     int index, String word, boolean[][] visited) {
         if (index == word.length()) {
             return true;
@@ -62,14 +62,12 @@ public class BoggleGame {
             return false;
         }
         visited[row][col] = true;
-        sb.append(matrix[row][col]);
         for (int[] dir : DIRS) {
-            if (boggleGameNaiveDFSHelper(matrix, row + dir[0], col + dir[1], sb, index + 1, word, visited)) {
+            if (boggleGameNaiveDFSHelper(matrix, row + dir[0], col + dir[1], index + 1, word, visited)) {
                 return true;
             }
         }
         visited[row][col] = false;
-        sb.deleteCharAt(sb.length() - 1);
         return false;
     }
 
@@ -78,6 +76,7 @@ public class BoggleGame {
         if (root.isEnd) {
             result.add(sb.toString());
             root.isEnd = false;
+            return;
         }
         if (row < 0 || row >= matrix.length || col < 0 || col >= matrix.length || visited[row][col]) {
             return;
