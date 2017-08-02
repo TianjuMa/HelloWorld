@@ -1,6 +1,7 @@
 package LaiOffer.HelperClass;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * TreeNode class for any common Tree data structure.
@@ -64,74 +65,34 @@ public class TreeNode {
      * @return root node of this tree.
      */
     public static TreeNode levelOrderReconstruct(String[] input) {
-        if (input == null || input.length == 0) {
+        if (input == null || input.length == 0 || (input.length == 1 && input[0].equals("#"))) {
             return null;
         }
-        TreeNode root = new TreeNode(computeValue(input[0]));
-        Map<Integer, TreeNode> map = new HashMap<>();
-        map.put(0, root);
-        for (int i = 1; i < input.length; i++) {
-            if (!input[i].equals("#")) {
-                map.put(i, new TreeNode(computeValue(input[i])));
-            }
-        }
-        int level = 1;
-        int prevLevelStart = 0;
-        int preLevelEnd = 0;
-        int curLevelStart;
-        int curLevelEnd;
-        while (Math.pow(2, level + 1) - 1 <= input.length) {
-            curLevelStart = (int) (Math.pow(2, level) - 1);
-            curLevelEnd = (int) (Math.pow(2, level + 1) - 2);
-            int prevIndex = prevLevelStart;
-            int curIndex = curLevelStart;
-            boolean finishLeft = false;
-            while (prevIndex <= preLevelEnd && curIndex <= curLevelEnd) {
-                while (!map.containsKey(prevIndex)) {
-                    curIndex += 2;
-                    prevIndex++;
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode root = new TreeNode(Integer.parseInt(input[0]));
+        queue.offer(root);
+        int size = 1;
+        int index = 1;
+        while (!queue.isEmpty()) {
+            int curSize = 0;
+            for (int i = 0; i < size; i++) {
+                TreeNode cur = queue.poll();
+                if (index < input.length && !input[index].equals("#")) {
+                    cur.left = new TreeNode(Integer.parseInt(input[index]));
+                    queue.offer(cur.left);
+                    curSize++;
                 }
-                if (prevIndex <= preLevelEnd) {
-                    if (!finishLeft) {
-                        if (map.containsKey(curIndex)) {
-                            map.get(prevIndex).left = map.get(curIndex);
-                        }
-                        finishLeft = true;
-                    } else {
-                        if (map.containsKey(curIndex)) {
-                            map.get(prevIndex).right = map.get(curIndex);
-                        }
-                        finishLeft = false;
-                        prevIndex++;
-                    }
+                index++;
+                if (index < input.length && !input[index].equals("#")) {
+                    cur.right = new TreeNode(Integer.parseInt(input[index]));
+                    queue.offer(cur.right);
+                    curSize++;
                 }
-                curIndex++;
+                index++;
             }
-            level++;
-            prevLevelStart = curLevelStart;
-            preLevelEnd = curLevelEnd;
+            size = curSize;
         }
         return root;
-    }
-
-    /**
-     * transfer a String to its corresponding integer value.
-     *
-     * @param input the input String.
-     * @return the corresponding integer value.
-     */
-    private static int computeValue(String input) {
-        int result = 0;
-        int sign = 1;
-        int startIndex = 0;
-        if (input.charAt(0) == '-') {
-            sign = -1;
-            startIndex = 1;
-        }
-        for (int i = startIndex; i < input.length(); i++) {
-            result = result * 10 + input.charAt(i) - '0';
-        }
-        return sign * result;
     }
 
     /**
