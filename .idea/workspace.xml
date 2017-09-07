@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3953a1d9-e7cc-4105-8904-9623d36a6f59" name="Default" comment="trieNode update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/MyIterators/EvenIterator.class" afterPath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/MyIterators/EvenIterator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/MyIterators/PeekIteratorII.class" afterPath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/MyIterators/PeekIteratorII.class" />
+    <list default="true" id="3953a1d9-e7cc-4105-8904-9623d36a6f59" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/Solution.class" afterPath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/Solution.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/TestDrive.class" afterPath="$PROJECT_DIR$/out/production/HelloWorld/LaiOffer/TestDrive.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloWorld.iml" afterPath="$PROJECT_DIR$/HelloWorld.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LaiOffer/BlackJack/Hand.java" afterPath="$PROJECT_DIR$/src/LaiOffer/BlackJack/Hand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LaiOffer/MyIterators/PeekIteratorII.java" afterPath="$PROJECT_DIR$/src/LaiOffer/MyIterators/PeekIteratorII.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LaiOffer/Solution.java" afterPath="$PROJECT_DIR$/src/LaiOffer/Solution.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LaiOffer/TestDrive.java" afterPath="$PROJECT_DIR$/src/LaiOffer/TestDrive.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +36,8 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LaiOffer/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="286">
+              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -53,7 +46,7 @@
       <file leaf-file-name="TestDrive.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LaiOffer/TestDrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="228">
               <caret line="80" column="60" lean-forward="true" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
               <folding />
             </state>
@@ -150,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/LaiProject/MapReduce/WordCount.java" />
         <option value="$PROJECT_DIR$/src/LaiOffer/MapReduce/LoadData.java" />
         <option value="$PROJECT_DIR$/src/LaiOffer/MapReduce/WordCount.java" />
-        <option value="$PROJECT_DIR$/src/LaiOffer/Solution.java" />
         <option value="$PROJECT_DIR$/src/LaiOffer/TestDrive.java" />
+        <option value="$PROJECT_DIR$/src/LaiOffer/Solution.java" />
       </list>
     </option>
   </component>
@@ -1155,7 +1148,7 @@
       <workItem from="1504715848340" duration="5620000" />
       <workItem from="1504731778034" duration="3119000" />
       <workItem from="1504803696529" duration="23000" />
-      <workItem from="1504803744840" duration="1394000" />
+      <workItem from="1504803744840" duration="2474000" />
     </task>
     <task id="LOCAL-00001" summary="trieNode">
       <created>1501526725384</created>
@@ -1192,7 +1185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504716078705</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="daily update">
+      <created>1504808818986</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1504808818986</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1228,7 +1228,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="950248000" />
+    <option name="totallyTimeSpent" value="951328000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1251,7 +1251,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2404692" sideWeight="0.5032415" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29178885" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29178885" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="547" y="95" width="656" height="496" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1311,7 +1311,8 @@
     <MESSAGE value="trieNode" />
     <MESSAGE value="EvenIterator update" />
     <MESSAGE value="trieNode update" />
-    <option name="LAST_COMMIT_MESSAGE" value="trieNode update" />
+    <MESSAGE value="daily update" />
+    <option name="LAST_COMMIT_MESSAGE" value="daily update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1322,11 +1323,19 @@
           <properties />
           <option name="timeStamp" value="352" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/LaiOffer/Solution.java</url>
+          <line>20</line>
+          <properties class="LaiOffer.Solution" method="mergeSort">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="568" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="568" />
+      <option name="time" value="569" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1556,7 +1565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LaiOffer/TestDrive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="228">
           <caret line="80" column="60" lean-forward="true" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
           <folding />
         </state>
@@ -1564,8 +1573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LaiOffer/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="286">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
           <folding />
         </state>
       </provider>

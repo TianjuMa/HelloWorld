@@ -41,7 +41,10 @@ class Solution {
             helper[index++] = sum[i];
             result += upperBound - lowBound;
         }
-        System.arraycopy(helper, left, sum, left, rightIndex - left);
+        while (rightIndex <= right) {
+            helper[index++] = sum[rightIndex++];
+        }
+        System.arraycopy(helper, left, sum, left, right + 1 - left);
         return result;
     }
 }
