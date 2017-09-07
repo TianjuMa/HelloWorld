@@ -3,6 +3,7 @@ package LaiOffer;
 import LaiOffer.HelperClass.ListNode;
 import LaiOffer.HelperClass.Point;
 import LaiOffer.HelperClass.TreeNode;
+import LaiOffer.MyIterators.EvenIterator;
 import LaiOffer.SortingAlgorithms.BucketSort;
 import LaiOffer.SortingAlgorithms.CountingSort;
 import LaiOffer.SortingAlgorithms.KSortedSort;
@@ -18,7 +19,6 @@ import java.util.Random;
  * Test case for Solution class.
  */
 public class TestDrive {
-
     public static void main(String[] args) {
         Solution solu = new Solution();
 
@@ -33,100 +33,72 @@ public class TestDrive {
 //                {'O', 'O', 'E', 'C', 'C'},
 //                {'C', 'O', 'C', 'E', 'E'},
 //                {'E', 'C', 'C', 'C', 'C'}};
-//
-//        Integer i1 = 127;
-//        Integer i2 = 128;
-//
-//        System.out.println(i1 < i2);
 
-//        Character[][] m = (Character) gym;
-//        int[] x = {-1, -1};
-
-        Point p0 = new Point(1, 1);
-        Point p1 = new Point(1, 1);
-        Point p2 = new Point(2, 2);
-//        Point p3 = new Point(3, 3);
-        Point[] points = {p0, p1, p2};
-
-
-//        Integer[][] y = new Integer[2][2];
-//        ph.printMatrix(solu.canMerge("abgcd", "bebgf", "abgcdbebgf"));
-
-//        char[][] matrix = new char[][]{
-//                {'A', 'B', 'E', 'D'},
-//                {'E', 'E', 'E', 'G'},
-//                {'E', 'I', 'H', 'I'},
-//                {'J', 'K', 'L', 'M'}};
-
-//        for (int[] array : solu.generateMatrix(3)) {
-//            System.out.println(Arrays.toString(array));
-//        }solu.printBST(, 14););
-
-//        TreeNode t = TreeNode.levelOrderReconstruct(new String[]{"-1", "0", "1"});
-//        printTree(t);
-
-//        System.out.println(t.key);
-//        ListNode node1 = new ListNode(1);
-//        ListNode node2 = new ListNode(2);
-//        ListNode node3 = new ListNode(3);
-//        ListNode node4 = new ListNode(4);
-//        ListNode node5 = new ListNode(5);
-//        node1.next = node2;
-//        node2.next = node3;
-//        node3.next = node4;
-//        node4.next = node5;
-//        int[][] matrix1 = new int[][]{
-//                {1, 1, 1, 1},
-//                {1, 1, 1, 1},
-//                {1, 1, 1, 1},
-//                {1, 1, 1, 1}};
-//
-//        System.out.println(solu.minWindow("ADOBECODEBANC", "ABC"));
-//        System.out.println(solu.minWindow("aaacbc", "ab"));
-//        System.out.println(solu.isAnagram("a", "a"));
-//        System.out.println(0 % 0);
-
-//        String[] array = new String[]{"/a/./b/../../c/", "/home/", "/abc/..."};
-//        for (String s : array) {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+//        list.add(1);
+//        list.add(2);
+//        list.add(3);
+//        list.add(4);
+//        list.add(5);
+//        EvenIterator ite1 = new EvenIterator(list);
+//        while(ite1.hasNext()) {
+//            System.out.println(ite1.next());
+//        }
+//        String[] root = new String[]{"1", "2", "3", "#", "15"};
+//        for (int i = 1; i <= 10; i++) {
 //
 //        }
+//        int[][] board = new int[][]{{1, 1}, {1, 0}};
+//        solu.gameOfLife(board);
+//        for (int[] a : board) {
+//            System.out.println(Arrays.toString(a));
+//        }
+//        System.out.println(solu.isAdditiveNumber("199001200"));
+//        System.out.println(solu.addOperators("232", 8));
+//        System.out.println(solu.addOperators("105", 5));
+//        System.out.println(solu.addOperators("00", 0));
+//        System.out.println(solu.addOperators("3456237490", 9191));
+//        System.out.println(solu.addOperators("1055", 100));
+//        int[] arr = new int[]{0, 2, 3, 4, 6, 8, 9};
+//        System.out.println(solu.summaryRanges(arr));
+//        char[][] matrix = new char[][]{
+//                {'1', '1', '1', '0'},
+//                {'0', '0', '1', '0'},
+//                {'0', '0', '1', '0'},
+//                {'0', '0', '0', '0'}};
+
+//        int[][] matrix1 = new int[][]{{1, 2, 3}, {2, 4, 5}, {6, 8, 10}};
+
 
 //        int[][] matrix = new int[][] {{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 50}};
 
-//        int[] array = new int[]{1, 2, 3};
+        int[] array = new int[]{0};
+        int[] array1 = new int[]{-2, 5, -1};
+        int[] array2 = new int[]{Integer.MAX_VALUE, Integer.MIN_VALUE, -1, 0};
+//        int[] array = new int[]{6, 7};
+//        int[] array1 = new int[]{6, 0, 4};
+        System.out.println(solu.countRangeSum(array, 0, 0));
+        System.out.println(solu.countRangeSum(array1, -2, 2));
+        System.out.println(solu.countRangeSum(array2, -1, 0));
+//        System.out.println(solu.removeDuplicateLetters("cbacdcbc"));
 //        char[][] gym = new char[][]{
-//                {'o','a','a','n'},
-//                {'e','t','a','e'},
-//                {'i','h','k','r'},
-//                {'i','f','l','v'}};
-//        char[][] gym2 = {{'a'}};
-//        String[] words = {"oath","pea","eat","rain"};
-//        String[] words2 = {"a", "a"};
+//                {'X','X','X','X'},
+//                {'X','O','O','X'},
+//                {'X','X','O','X'},
+//                {'X','O','X','X'}};
+//
 
-        String[] words3 = {"ab","cb","ad","bd","ac","ca","da","bc","db","adcb","dabc","abb","acb"};
-        char[][] gym3 = new char[][]{
-                {'a','b'},
-                {'c','d'}};
+//
+//        String[] words3 = {"a", "b"};
 
-//        System.out.println(solu.findWords(gym, words));
-//        System.out.println(solu.findWords(gym2, words2));
-        System.out.println(solu.findWords(gym3, words3));
-//        BoggleGame b = new BoggleGame();
-//        System.out.println(BoggleGame.boggleGameNaive(gym, words));
-//        System.out.println(BoggleGame.BoggleGameOptimized(gym, words));
-        System.out.println(BoggleGame.BoggleGameOptimized(gym3, words3));
-//        System.out.println(solu.exist(gym, "SEE"));
-//        System.out.println(solu.exist(gym, "ABCB"));
-//        System.out.println(solu.exist(gym, "ASBF"));
-//        for (int[] array : matrix) {
-//            System.out.println(Arrays.toString(array));
-//        }
-//        for (TreeNode t : solu.convertBST(TreeNode.levelOrderReconstruct(}))) {
-//            System.out.println(t.key);
-//        }
+//        System.out.println(solu.distance(TreeNode.levelOrderReconstruct(
+//                new String[]{"7","3","9","1","5","8","10","#","2","4","6"}), 10, 4));
+//        System.out.println(solu.topView(TreeNode.levelOrderReconstruct(new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9"})));
 
-
-//        System.out.println(solu.twoSumBST(new TreeNode(Integer.MAX_VALUE)));
+//        char[][] gym3 = new char[][]{
+//                {'a','b'},
+//                {'c','d'}};
 
 //
 //        double[][] matrix2 = new double[][]{
@@ -142,17 +114,24 @@ public class TestDrive {
 //                {' ', 'E', ' ', ' ', 'E'},
 //                {' ', ' ', 'E', ' ', ' '},
 //                {' ', ' ', ' ', ' ', ' '}};
-//        int[] in = {1, 3, 4, 5, 8, 11};
-//        int[] post = {1, 4, 3, 11, 8, 5};
-//
+//        int[] in = {1, 4, 7, 11, 6, 2, -3, -8};
+//        System.out.println(solu.search(in, 2));
+//        int[] pre = {-2, 0, 6, 7, 8, 10};
+//        System.out.println(solu.search(pre, 7));
+//        int[] array1 = {1, 3, 5, 8, 6, 2};
+//        System.out.println(solu.search(array1, 5));
+//        int[] array2 = {-2, 0, 6, 7, 8, 10, 1};
+//        System.out.println(solu.search(array2, 10));
 
-//
-//        int[] A = new int[] {1, 3, 5};
-//        int[] B = new int[]{4, 8};
-//        for (int i = 1; i <= 20; i++) {
-//            System.out.println("factory (" + i + ") = " + solu.factory(i));
-//        }
-//        String[] array = new String[]{"4", "#", "6", "1", "5", "#", "#"};
-//        System.out.println(TreeNode.levelOrderReconstruct(array));
+//        System.out.println(solu.primes(2));
+//        System.out.println(solu.primes(3));
+//        int[][] input = new int[][]{{1, 7}, {2, 5}, {6, 20}, {4}};
+//        int[][] input2 = new int[][]{{1, 4, 8, 9}, {2, 5, 8, 10}, {8, 20}, {8}};
+
+
+//        System.out.println(solu.shortest("aabbbcccc", 3));
+//        System.out.println(solu.shortest("aabcc", 4).length());
+//        System.out.println(solu.shortest("abbda", 3));
+
     }
 }

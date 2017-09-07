@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * one hand represents one user.
  */
-public abstract class Hand {
+public abstract class Hand{
     protected final List<Card> cards = new ArrayList<>();
     protected String name;
     private static final String DEFAULT_NAME = "Lao Wang";
