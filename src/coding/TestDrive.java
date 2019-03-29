@@ -1,14 +1,14 @@
-package LaiOffer;
+package coding;
 
-import LaiOffer.HelperClass.ListNode;
-import LaiOffer.HelperClass.Point;
-import LaiOffer.HelperClass.TreeNode;
-import LaiOffer.MyIterators.EvenIterator;
-import LaiOffer.SortingAlgorithms.BucketSort;
-import LaiOffer.SortingAlgorithms.CountingSort;
-import LaiOffer.SortingAlgorithms.KSortedSort;
-import LaiOffer.Trie.BoggleGame;
-import LaiOffer.Trie.Trie;
+import coding.HelperClass.ListNode;
+import coding.HelperClass.Point;
+import coding.HelperClass.TreeNode;
+import coding.MyIterators.EvenIterator;
+import coding.SortingAlgorithms.BucketSort;
+import coding.SortingAlgorithms.CountingSort;
+import coding.SortingAlgorithms.KSortedSort;
+import coding.Trie.BoggleGame;
+import coding.Trie.Trie;
 
 import java.util.ArrayList;
 import java.util.Arrays;

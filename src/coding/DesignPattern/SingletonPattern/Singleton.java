@@ -1,4 +1,4 @@
-package LaiOffer.DesignPattern.SingletonPattern;
+package coding.DesignPattern.SingletonPattern;
 
 public class Singleton {
     private final static Singleton INSTANCE = new Singleton();

@@ -1,4 +1,4 @@
-package LaiOffer.parkingLot;
+package coding.parkingLot;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package LaiOffer.lambda.Function;
+package coding.lambda.Function;
 
 public class Main {
 

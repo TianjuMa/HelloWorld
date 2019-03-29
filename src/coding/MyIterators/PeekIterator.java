@@ -1,4 +1,4 @@
-package LaiOffer.MyIterators;
+package coding.MyIterators;
 
 import java.util.Iterator;
 

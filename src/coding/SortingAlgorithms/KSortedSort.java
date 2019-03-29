@@ -1,4 +1,4 @@
-package LaiOffer.SortingAlgorithms;
+package coding.SortingAlgorithms;
 
 import java.util.PriorityQueue;
 

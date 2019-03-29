@@ -1,6 +1,6 @@
-package LaiOffer.SortingAlgorithms;
+package coding.SortingAlgorithms;
 
-import LaiOffer.HelperClass.ListNode;
+import coding.HelperClass.ListNode;
 
 /**
  * one implementation of merge sort.

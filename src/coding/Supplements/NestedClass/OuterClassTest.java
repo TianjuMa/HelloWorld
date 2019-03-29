@@ -1,4 +1,4 @@
-package LaiOffer.Supplements.NestedClass;
+package coding.Supplements.NestedClass;
 
 public class OuterClassTest {
     public static void main(String[] args) {

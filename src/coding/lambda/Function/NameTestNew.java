@@ -1,6 +1,6 @@
-package LaiOffer.lambda.Function;
+package coding.lambda.Function;
 
-import LaiOffer.lambda.Person;
+import coding.lambda.Person;
 
 import java.util.List;
 import java.util.function.Function;

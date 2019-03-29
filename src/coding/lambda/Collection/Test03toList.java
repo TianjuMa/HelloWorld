@@ -1,7 +1,7 @@
-package LaiOffer.lambda.Collection;
+package coding.lambda.Collection;
 
 
-import LaiOffer.lambda.Person;
+import coding.lambda.Person;
 
 import java.util.List;
 import java.util.stream.Collectors;

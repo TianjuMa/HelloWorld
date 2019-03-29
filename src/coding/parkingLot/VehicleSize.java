@@ -1,4 +1,4 @@
-package LaiOffer.parkingLot;
+package coding.parkingLot;
 
 public enum VehicleSize {
     Compact(1),

@@ -1,4 +1,4 @@
-package LaiOffer.Supplements.OverrideTest;
+package coding.Supplements.OverrideTest;
 
  class C extends B{
 }

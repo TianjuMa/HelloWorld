@@ -1,4 +1,4 @@
-package LaiOffer.SortingAlgorithms;
+package coding.SortingAlgorithms;
 
 /**
  * An implementation of counting sort algorithm. This algorithm is

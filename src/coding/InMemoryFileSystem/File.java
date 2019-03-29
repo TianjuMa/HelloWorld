@@ -1,4 +1,4 @@
-package LaiOffer.InMemoryFileSystem;
+package coding.InMemoryFileSystem;
 
 public class File extends Entry {
     private byte[] contents;

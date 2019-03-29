@@ -1,4 +1,4 @@
-package LaiOffer.Implementations;
+package coding.Implementations;
 
 /**
  * A simple implementation of MinHeap Class

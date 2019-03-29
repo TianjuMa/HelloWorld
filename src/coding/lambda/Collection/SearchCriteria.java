@@ -1,8 +1,8 @@
-package LaiOffer.lambda.Collection;
+package coding.lambda.Collection;
 
 
-import LaiOffer.lambda.Gender;
-import LaiOffer.lambda.Person;
+import coding.lambda.Gender;
+import coding.lambda.Person;
 
 import java.util.HashMap;
 import java.util.Map;

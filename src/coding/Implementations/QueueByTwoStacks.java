@@ -1,4 +1,4 @@
-package LaiOffer.Implementations;
+package coding.Implementations;
 
 import java.util.Deque;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package LaiOffer.InMemoryFileSystem;
+package coding.InMemoryFileSystem;
 
 public abstract class Entry {
     private Directory parent;

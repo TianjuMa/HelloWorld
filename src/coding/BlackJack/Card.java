@@ -1,4 +1,4 @@
-package LaiOffer.BlackJack;
+package coding.BlackJack;
 
 /**
  * one card has one value (0 ~ 13)and one suit (4 kinds).

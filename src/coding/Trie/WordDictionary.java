@@ -1,4 +1,4 @@
-package LaiOffer.Trie;
+package coding.Trie;
 
 /**
  * Your WordDictionary object will be instantiated and called as such:

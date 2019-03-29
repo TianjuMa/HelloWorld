@@ -1,4 +1,4 @@
-package LaiOffer.Trie;
+package coding.Trie;
 
 /**
  * Created by matinaju on 7/2/17.

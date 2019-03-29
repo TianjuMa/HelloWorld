@@ -1,4 +1,4 @@
-package LaiOffer.MapReduce;
+package coding.MapReduce;
 
 import java.util.ArrayList;
 import java.util.Arrays;

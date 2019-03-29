@@ -1,8 +1,8 @@
-package test.LaiOffer.SortingAlgorithms;
+package test.unitTests.SortingAlgorithms;
 
-import LaiOffer.HelperClass.ListNode;
-import LaiOffer.SortingAlgorithms.MergeSort;
-import LaiOffer.SortingAlgorithms.QuickSort;
+import coding.HelperClass.ListNode;
+import coding.SortingAlgorithms.MergeSort;
+import coding.SortingAlgorithms.QuickSort;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;

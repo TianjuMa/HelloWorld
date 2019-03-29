@@ -1,4 +1,4 @@
-package LaiOffer.Implementations;
+package coding.Implementations;
 
 /**
  * Created by matinaju on 6/27/17.

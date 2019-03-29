@@ -1,4 +1,4 @@
-package LaiOffer.BlackJack;
+package coding.BlackJack;
 
 /**
  * four kinds of suits of one card.

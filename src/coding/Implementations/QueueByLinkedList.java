@@ -1,6 +1,6 @@
-package LaiOffer.Implementations;
+package coding.Implementations;
 
-import LaiOffer.HelperClass.ListNode;
+import coding.HelperClass.ListNode;
 
 /**
  * Created by matinaju on 4/21/17.

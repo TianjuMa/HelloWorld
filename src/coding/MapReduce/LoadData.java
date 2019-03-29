@@ -1,8 +1,9 @@
-package LaiOffer.MapReduce;
+package coding.MapReduce;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 

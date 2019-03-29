@@ -1,4 +1,4 @@
-package LaiOffer.ReadFile;
+package coding.ReadFile;
 
 import java.io.*;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ public class Impl {
         FileInputStream in = null;
         FileOutputStream out = null;
         try {
-            in = new FileInputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/LaiOffer/ReadFile/input.txt");
+            in = new FileInputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/coding/ReadFile/input.txt");
             byte[] bytes = new byte[10];
             int n = in.read(bytes);
             System.out.println("n = " + n);
@@ -27,7 +27,7 @@ public class Impl {
 
     void CommonReadMethod() throws IOException {
         FileInputStream fis = new
-                FileInputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/LaiOffer/ReadFile/input.txt");
+                FileInputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/coding/ReadFile/input.txt");
         BufferedReader br = new BufferedReader(new InputStreamReader(fis));
 
         String line;
@@ -41,8 +41,8 @@ public class Impl {
         FileInputStream in = null;
         FileOutputStream out = null;
         try {
-            in = new FileInputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/LaiOffer/ReadFile/input.txt");
-            out = new FileOutputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/LaiOffer/ReadFile/output.txt");
+            in = new FileInputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/coding/ReadFile/input.txt");
+            out = new FileOutputStream("/Users/matinaju/IdeaProjects/HelloWorld/src/coding/ReadFile/output.txt");
             int c;
             while ((c = in.read()) != -1) {
                 System.out.print((char) c);
@@ -62,8 +62,8 @@ public class Impl {
         FileReader in = null;
         FileWriter out = null;
         try {
-            in = new FileReader("/Users/matinaju/IdeaProjects/HelloWorld/src/LaiOffer/ReadFile/chineseInput.txt");
-            out = new FileWriter("/Users/matinaju/IdeaProjects/HelloWorld/src/LaiOffer/ReadFile/chineseOutput.txt");
+            in = new FileReader("/Users/matinaju/IdeaProjects/HelloWorld/src/coding/ReadFile/chineseInput.txt");
+            out = new FileWriter("/Users/matinaju/IdeaProjects/HelloWorld/src/coding/ReadFile/chineseOutput.txt");
             int c;
             while ((c = in.read()) != -1) {
                 System.out.print((char) c);

@@ -1,4 +1,4 @@
-package LaiOffer.HelperClass;
+package coding.HelperClass;
 
 import java.util.LinkedList;
 import java.util.Queue;

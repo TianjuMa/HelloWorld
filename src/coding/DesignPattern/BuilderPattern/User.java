@@ -1,4 +1,4 @@
-package LaiOffer.DesignPattern.BuilderPattern;
+package coding.DesignPattern.BuilderPattern;
 
 /**
  * Created by matinaju on 7/17/17.

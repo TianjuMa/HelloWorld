@@ -1,4 +1,4 @@
-package LaiOffer.Supplements.NestedClass;
+package coding.Supplements.NestedClass;
 
 class OuterClass {
     private static String msg = "message";

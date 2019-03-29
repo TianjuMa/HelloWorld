@@ -1,7 +1,7 @@
-package LaiOffer.DesignPattern.FactoryPattern;
+package coding.DesignPattern.FactoryPattern;
 
-import LaiOffer.DesignPattern.FactoryPattern.CommonFactory.Shape;
-import LaiOffer.DesignPattern.FactoryPattern.CommonFactory.ShapeFactory;
+import coding.DesignPattern.FactoryPattern.CommonFactory.Shape;
+import coding.DesignPattern.FactoryPattern.CommonFactory.ShapeFactory;
 
 public class FactoryPatternDemo {
     private static final ShapeFactory shapeFactory = new ShapeFactory();

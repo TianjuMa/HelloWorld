@@ -1,6 +1,6 @@
-package test.LaiOffer.Implementations;
+package test.unitTests.Implementations;
 
-import LaiOffer.Implementations.MyHashMap;
+import coding.Implementations.MyHashMap;
 import org.junit.Test;
 import org.junit.Before;
 

@@ -1,4 +1,4 @@
-package LaiOffer.lambda.Collection;
+package coding.lambda.Collection;
 
 /**
  * @author MikeW

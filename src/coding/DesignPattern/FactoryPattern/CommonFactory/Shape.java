@@ -1,4 +1,4 @@
-package LaiOffer.DesignPattern.FactoryPattern.CommonFactory;
+package coding.DesignPattern.FactoryPattern.CommonFactory;
 
 public interface Shape {
     void draw();

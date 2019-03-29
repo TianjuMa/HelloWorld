@@ -1,4 +1,4 @@
-package LaiOffer.DesignPattern.FactoryPattern.AbstractFactory;
+package coding.DesignPattern.FactoryPattern.AbstractFactory;
 
 public class WindowsButton implements Button {
     @Override

@@ -1,4 +1,4 @@
-package LaiOffer.ReadFile;
+package coding.ReadFile;
 
 /**
  * Created by matinaju on 6/20/17.

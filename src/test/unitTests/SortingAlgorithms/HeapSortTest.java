@@ -1,6 +1,6 @@
-package test.LaiOffer.SortingAlgorithms;
+package test.unitTests.SortingAlgorithms;
 
-import LaiOffer.SortingAlgorithms.HeapSort;
+import coding.SortingAlgorithms.HeapSort;
 import org.junit.Test;
 import org.junit.Before;
 

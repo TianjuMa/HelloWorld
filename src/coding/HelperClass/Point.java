@@ -1,4 +1,4 @@
-package LaiOffer.HelperClass;
+package coding.HelperClass;
 
 /**
  * Created by matinaju on 6/15/17.

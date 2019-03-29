@@ -1,4 +1,4 @@
-package LaiOffer.BlackJack;
+package coding.BlackJack;
 
 /**
  * main function for testing the feasibility of Black Jack Game.

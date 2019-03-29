@@ -1,4 +1,4 @@
-package LaiOffer.SortingAlgorithms;
+package coding.SortingAlgorithms;
 
 /**
  * one implementation of heap sort.

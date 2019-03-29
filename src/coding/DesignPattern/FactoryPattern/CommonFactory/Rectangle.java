@@ -1,4 +1,4 @@
-package LaiOffer.DesignPattern.FactoryPattern.CommonFactory;
+package coding.DesignPattern.FactoryPattern.CommonFactory;
 
 public class Rectangle implements Shape {
     @Override

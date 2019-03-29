@@ -1,7 +1,7 @@
-package test.LaiOffer.SortingAlgorithms;
+package test.unitTests.SortingAlgorithms;
 
-import LaiOffer.HelperClass.ListNode;
-import LaiOffer.SortingAlgorithms.MergeSort;
+import coding.HelperClass.ListNode;
+import coding.SortingAlgorithms.MergeSort;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;

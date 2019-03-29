@@ -1,4 +1,4 @@
-package LaiOffer.Trie;
+package coding.Trie;
 
 public class Trie {
     private Trie root;
