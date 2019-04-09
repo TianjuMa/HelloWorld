@@ -57,7 +57,7 @@ class Q {
 	}
 
 	public synchronized void put(Integer ele) {
-		if (q.size() == limit) {
+		while (q.size() == limit) { // use while because when I woke up, q may still be full
 			try {
 				wait();
 			} catch (InterruptedException e) {
@@ -65,10 +65,11 @@ class Q {
 			}
 		}
 
+		// q.size() != limit
 		if (q.size() == 0) {
-			notifyAll();
+			notifyAll();   // we don't want producer notify a producer
 		}
-		q.offer(ele);
+		q.offer(ele);   // the order of offer and notifyAll can be changed
 	}
 
 	public synchronized Integer take() {
