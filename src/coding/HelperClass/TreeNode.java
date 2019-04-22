@@ -10,6 +10,7 @@ public class TreeNode {
     public int key;
     public TreeNode left;
     public TreeNode right;
+    public TreeNode parent;
 
     /**
      * constructor for a TreeNode object, with one integer value.
@@ -20,6 +21,7 @@ public class TreeNode {
         key = value;
         left = null;
         right = null;
+        parent = null;
     }
 
     /**
@@ -79,12 +81,14 @@ public class TreeNode {
                 TreeNode cur = queue.poll();
                 if (index < input.length && !input[index].equals("#")) {
                     cur.left = new TreeNode(Integer.parseInt(input[index]));
+                    cur.left.parent = cur;
                     queue.offer(cur.left);
                     curSize++;
                 }
                 index++;
                 if (index < input.length && !input[index].equals("#")) {
                     cur.right = new TreeNode(Integer.parseInt(input[index]));
+                    cur.right.parent = cur;
                     queue.offer(cur.right);
                     curSize++;
                 }
