@@ -7,7 +7,7 @@ import java.util.Queue;
  * TreeNode class for any common Tree data structure.
  */
 public class TreeNode {
-    public int key;
+    public int val;
     public TreeNode left;
     public TreeNode right;
     public TreeNode parent;
@@ -18,7 +18,7 @@ public class TreeNode {
      * @param value target value.
      */
     public TreeNode(int value) {
-        key = value;
+        val = value;
         left = null;
         right = null;
         parent = null;
@@ -39,8 +39,8 @@ public class TreeNode {
             size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode cur = queue.poll();
-                if (cur.key != Integer.MIN_VALUE) {
-                    sb.append(cur.key).append(" ");
+                if (cur.val != Integer.MIN_VALUE) {
+                    sb.append(cur.val).append(" ");
                 } else {
                     sb.append("# ");
                 }
@@ -107,7 +107,7 @@ public class TreeNode {
      */
     private boolean containsInteger(Queue<TreeNode> queue) {
         for (TreeNode t : queue) {
-            if (t.key > Integer.MIN_VALUE) {
+            if (t.val > Integer.MIN_VALUE) {
                 return true;
             }
         }

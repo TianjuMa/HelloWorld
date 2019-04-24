@@ -30,7 +30,7 @@ public class BSTIterator {
         if (hasNext()) {
             result = stack.pollFirst();
             diveLeft(stack, result.right);
-            return result.key;
+            return result.val;
         }
         return null;
     }

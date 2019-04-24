@@ -47,9 +47,9 @@ public class MyBST {
     public boolean iterativeSearch(int target) {
         TreeNode currentNode = root;
         while (currentNode != null) {
-            if (currentNode.key == target) {
+            if (currentNode.val == target) {
                 return true;
-            } else if (currentNode.key < target) {
+            } else if (currentNode.val < target) {
                 currentNode = currentNode.right;
             } else {
                 currentNode = currentNode.left;
@@ -90,15 +90,15 @@ public class MyBST {
         TreeNode pre = null;
         while (currentNode != null) {
             pre = currentNode;
-            if (currentNode.key < target) {
+            if (currentNode.val < target) {
                 currentNode = currentNode.right;
-            } else if (currentNode.key > target) {
+            } else if (currentNode.val > target) {
                 currentNode = currentNode.left;
             } else {
                 return returnNode;
             }
         }
-        if (pre.key < target) {
+        if (pre.val < target) {
             pre.right = new TreeNode(target);
         } else {
             pre.left = new TreeNode(target);
@@ -163,14 +163,14 @@ public class MyBST {
         stack.offerLast(root);
         while (!stack.isEmpty()) {
             TreeNode cur = stack.pollLast();
-            result.add(cur.key);
+            result.add(cur.val);
             if (cur.right != null) {
                 stack.offerLast(cur.right);
             }
             if (cur.left != null) {
                 stack.offerLast(cur.left);
             }
-            result.add(cur.key);
+            result.add(cur.val);
         }
     }
 
@@ -193,7 +193,7 @@ public class MyBST {
                 stack.offerFirst(nextNode);
                 nextNode = nextNode.left;
             } else {
-                result.add(stack.peekFirst().key);
+                result.add(stack.peekFirst().val);
                 nextNode = stack.peekFirst().right;
                 stack.pollFirst();
             }
@@ -202,7 +202,7 @@ public class MyBST {
 
     /**
      * helper function of post order traverse with iterative way.
-     * key point: prev record the previous node already traversed.
+     * point: prev record the previous node already traversed.
      *
      * @param result the result list containing the output.
      * @param root   root node of this tree.
@@ -222,18 +222,18 @@ public class MyBST {
                 } else if (cur.right != null) {
                     stack.offerLast(cur.right);
                 } else {
-                    result.add(cur.key);
+                    result.add(cur.val);
                     stack.pollLast();
                 }
             } else if (prev == cur.left) {
                 if (cur.right != null) {
                     stack.offerLast(cur.right);
                 } else {
-                    result.add(cur.key);
+                    result.add(cur.val);
                     stack.pollLast();
                 }
             } else {
-                result.add(cur.key);
+                result.add(cur.val);
                 stack.pollLast();
             }
             prev = cur;
@@ -251,9 +251,9 @@ public class MyBST {
         if (root == null) {
             return null;
         }
-        if (root.key < target) {
+        if (root.val < target) {
             root.right = delete(root.right, target);
-        } else if (root.key > target) {
+        } else if (root.val > target) {
             root.left = delete(root.left, target);
         }
         if (root.left == null) {
@@ -300,9 +300,9 @@ public class MyBST {
         if (root == null) {
             return false;
         }
-        if (root.key == target) {
+        if (root.val == target) {
             return true;
-        } else if (root.key < target) {
+        } else if (root.val < target) {
             return recursiveSearch(root.right, target);
         } else {
             return recursiveSearch(root.left, target);
@@ -320,9 +320,9 @@ public class MyBST {
         if (root == null) {
             return new TreeNode(target);
         }
-        if (root.key == target) {
+        if (root.val == target) {
             return root;
-        } else if (root.key < target) {
+        } else if (root.val < target) {
             root.left = recursiveInsertI(root.left, target);
         } else {
             root.right = recursiveInsertI(root.right, target);
@@ -352,7 +352,7 @@ public class MyBST {
      * @param target target value.
      */
     private void helperInsertToTree(TreeNode root, int target) {
-        if (root.key > target) {
+        if (root.val > target) {
             if (root.left == null) {
                 root.left = new TreeNode(target);
             } else {
