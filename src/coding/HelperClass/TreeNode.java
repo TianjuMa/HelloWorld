@@ -56,7 +56,12 @@ public class TreeNode {
                 }
             }
         }
-        return sb.toString().trim();
+        while (sb.length() != 0) {
+            char c = sb.charAt(sb.length() - 1);
+            if (c == '#' || c == ' ') sb.deleteCharAt(sb.length() - 1);
+            else break;
+        }
+        return sb.toString();
     }
 
     /**
