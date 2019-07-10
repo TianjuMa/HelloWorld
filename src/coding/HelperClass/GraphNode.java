@@ -14,4 +14,9 @@ public class GraphNode {
         this.key = key;
         neighbors = new ArrayList<>();
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(key);
+    }
 }

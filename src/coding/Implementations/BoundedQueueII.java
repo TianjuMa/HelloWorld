@@ -4,9 +4,9 @@ package coding.Implementations;
  * Created by matinaju on 6/27/17.
  */
 public class BoundedQueueII {
-    int[] array;
-    int head;
-    int tail;
+    private int[] array;
+    private int head;
+    private int tail;
 
     public BoundedQueueII(int capacity) {
         if (capacity <= 0) {

@@ -4,16 +4,16 @@ package coding.Implementations;
  * Created by matinaju on 4/21/17.
  */
 public class BoundedQueue {
-    int[] array;
+    private int[] array;
     /**
      * head points to the next element can be poll out from queue.
      */
-    int head;
+    private int head;
     /**
      * tail point to the next available position to put element.
      */
-    int tail;
-    int size;
+    private int tail;
+    private int size;
 
     public BoundedQueue(int capacity) {
         array = new int[capacity];
