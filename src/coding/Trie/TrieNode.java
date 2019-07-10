@@ -12,17 +12,17 @@ public class TrieNode {
      * map contains all the paths from this node. Key is character, representing one char
      * at this position, and Value is the corresponding Trie Node under this node.
      */
-    public Map<Character, TrieNode> children;
+    private Map<Character, TrieNode> children;
 
     /**
      * this boolean value represents whether this node locates in the end position of one word.
      */
-    public boolean isEnd;
+    private boolean isEnd;
 
     /**
      * this integer value represents how many ending nodes under this node, including this node itself.
      */
-    public int count;
+    private int count;
 
     /**
      * constructor for this class.
